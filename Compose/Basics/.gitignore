@@ -89,3 +89,4 @@ lint/tmp/
 *.hprof
 
 # End of https://mrkandreev.name/snippets/gitignore-generator/#Android
+.DS_Store
