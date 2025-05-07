@@ -1,6 +1,5 @@
 package ru.dast_6_tino.state.ui.views
 
-import android.content.res.Configuration
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
@@ -11,8 +10,8 @@ import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import ru.dast_6_tino.state.ui.DarkLightPreviews
 import ru.dast_6_tino.state.ui.theme.StateTheme
 
 @Composable
@@ -41,23 +40,7 @@ fun WaterCounterStateless(
     }
 }
 
-@Preview(
-    name = "WaterCounter. Light mode",
-    showBackground = true,
-    uiMode = Configuration.UI_MODE_NIGHT_NO,
-)
-@Composable
-fun WaterCounterLightPreview() {
-    StateTheme {
-        WaterCounterStateless(count = 2, onButtonClick = {})
-    }
-}
-
-@Preview(
-    name = "WaterCounter. Night mode",
-    showBackground = true,
-    uiMode = Configuration.UI_MODE_NIGHT_YES,
-)
+@DarkLightPreviews
 @Composable
 fun WaterCounterNightPreview() {
     StateTheme {

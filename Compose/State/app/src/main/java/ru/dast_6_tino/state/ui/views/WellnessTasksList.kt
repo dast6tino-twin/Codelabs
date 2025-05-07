@@ -1,12 +1,11 @@
 package ru.dast_6_tino.state.ui.views
 
-import android.content.res.Configuration
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import ru.dast_6_tino.state.WellnessTask
+import ru.dast_6_tino.state.ui.DarkLightPreviews
 import ru.dast_6_tino.state.ui.theme.StateTheme
 
 @Composable
@@ -29,23 +28,7 @@ fun WellnessTasksList(
     }
 }
 
-@Preview(
-    name = "WellnessTasksList. Light mode",
-    showBackground = true,
-    uiMode = Configuration.UI_MODE_NIGHT_NO,
-)
-@Composable
-fun WellnessTasksListLightPreview() {
-    StateTheme {
-        WellnessTasksList(list = previewList(), onCheckClicked = { _, _ -> }, onCloseClick = {})
-    }
-}
-
-@Preview(
-    name = "WellnessTasksList. Night mode",
-    showBackground = true,
-    uiMode = Configuration.UI_MODE_NIGHT_YES,
-)
+@DarkLightPreviews
 @Composable
 fun WellnessTasksListNightPreview() {
     StateTheme {

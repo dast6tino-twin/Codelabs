@@ -1,6 +1,5 @@
 package ru.dast_6_tino.compose_basics
 
-import android.content.res.Configuration
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -10,7 +9,6 @@ import androidx.compose.animation.core.Spring
 import androidx.compose.animation.core.spring
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.ColumnScope
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -38,8 +36,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import ru.dast_6_tino.compose_basics.ui.DarkLightPreviews
 import ru.dast_6_tino.compose_basics.ui.theme.BasicsTheme
 
 class MainActivity : ComponentActivity() {
@@ -88,22 +86,21 @@ fun OnboardingScreen(onContinueClicked: () -> Unit, modifier: Modifier = Modifie
 fun Greetings(modifier: Modifier = Modifier, names: List<String> = List(1000, Int::toString)) {
     LazyColumn(modifier = modifier.padding(4.dp)) {
         items(names) { name ->
-            Greeting(content = {
-                CardContent(name)
-            })
+            Greeting(name)
         }
     }
 }
 
 @Composable
-fun Greeting(content: @Composable ColumnScope.() -> Unit, modifier: Modifier = Modifier) {
+fun Greeting(name: String, modifier: Modifier = Modifier) {
     Card(
         modifier = modifier.padding(vertical = 4.dp, horizontal = 8.dp),
         colors = CardDefaults.cardColors().copy(
             containerColor = MaterialTheme.colorScheme.primary,
         ),
-        content = content,
-    )
+    ) {
+        CardContent(name)
+    }
 }
 
 @Composable
@@ -165,33 +162,7 @@ fun CardContent(name: String, modifier: Modifier = Modifier) {
     }
 }
 
-@Preview(
-    name = "My app preview. Dark mode",
-    widthDp = 320,
-    showBackground = true,
-    uiMode = Configuration.UI_MODE_NIGHT_YES,
-)
-@Preview(name = "My app preview. Light mode")
-@Composable
-fun MyAppPreview() {
-    BasicsTheme {
-        MyApp(Modifier.fillMaxSize())
-    }
-}
-
-@Preview(
-    name = "Onboarding preview. Dark mode",
-    widthDp = 320,
-    heightDp = 320,
-    showBackground = true,
-    uiMode = Configuration.UI_MODE_NIGHT_YES,
-)
-@Preview(
-    name = "Onboarding preview. Light mode",
-    showBackground = true,
-    widthDp = 320,
-    heightDp = 320,
-)
+@DarkLightPreviews
 @Composable
 fun OnboardingScreenPreview() {
     BasicsTheme {
@@ -199,18 +170,20 @@ fun OnboardingScreenPreview() {
     }
 }
 
-@Preview(
-    name = "Greetings preview. Dark mode",
-    widthDp = 320,
-    showBackground = true,
-    uiMode = Configuration.UI_MODE_NIGHT_YES,
-)
-@Preview(
-    name = "Greetings preview. Light mode",
-    widthDp = 320,
-    showBackground = true,
-)
+@DarkLightPreviews
 @Composable
 fun GreetingsPreview() {
     BasicsTheme { Greetings() }
+}
+
+@DarkLightPreviews
+@Composable
+fun GreetingPreview() {
+    BasicsTheme { Greeting("0") }
+}
+
+@DarkLightPreviews
+@Composable
+fun CardContentPreview() {
+    BasicsTheme { CardContent("0") }
 }

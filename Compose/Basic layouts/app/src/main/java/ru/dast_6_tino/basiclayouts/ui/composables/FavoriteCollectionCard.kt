@@ -1,6 +1,5 @@
 package ru.dast_6_tino.basiclayouts.ui.composables
 
-import android.content.res.Configuration
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
 import androidx.compose.foundation.Image
@@ -17,9 +16,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import ru.dast_6_tino.basiclayouts.R
+import ru.dast_6_tino.basiclayouts.ui.DarkLightPreviews
 import ru.dast_6_tino.basiclayouts.ui.theme.BasicLayoutsTheme
 
 @Composable
@@ -54,30 +53,9 @@ fun FavoriteCollectionCard(
     }
 }
 
-@Preview(
-    name = "Favorite collection card. Light mode",
-    showBackground = true,
-    uiMode = Configuration.UI_MODE_NIGHT_NO,
-)
+@DarkLightPreviews
 @Composable
 fun FavoriteCollectionCardLightPreview() {
-    BasicLayoutsTheme {
-        FavoriteCollectionCard(
-            drawableRes = R.drawable.fc2_nature_meditations,
-            textRes = R.string.fc2_nature_meditations,
-            onClick = {},
-            modifier = Modifier.padding(8.dp),
-        )
-    }
-}
-
-@Preview(
-    name = "Favorite collection card. Night mode",
-    showBackground = true,
-    uiMode = Configuration.UI_MODE_NIGHT_YES,
-)
-@Composable
-fun FavoriteCollectionCardNightPreview() {
     BasicLayoutsTheme {
         FavoriteCollectionCard(
             drawableRes = R.drawable.fc2_nature_meditations,

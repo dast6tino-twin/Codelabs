@@ -1,6 +1,5 @@
 package ru.dast_6_tino.basiclayouts.ui.composables
 
-import android.content.res.Configuration
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.height
@@ -9,10 +8,10 @@ import androidx.compose.foundation.lazy.grid.LazyHorizontalGrid
 import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import ru.dast_6_tino.basiclayouts.FavoriteCollection
 import ru.dast_6_tino.basiclayouts.R
+import ru.dast_6_tino.basiclayouts.ui.DarkLightPreviews
 import ru.dast_6_tino.basiclayouts.ui.theme.BasicLayoutsTheme
 
 @Composable
@@ -39,25 +38,9 @@ fun FavoriteCollectionsGrid(
     }
 }
 
-@Preview(
-    name = "Favorite collections grid. Light mode",
-    showBackground = true,
-    uiMode = Configuration.UI_MODE_NIGHT_NO,
-)
+@DarkLightPreviews
 @Composable
 fun FavoriteCollectionsGridLightPreview() {
-    BasicLayoutsTheme {
-        FavoriteCollectionsGrid(data = favoriteCollectionsMock, onClick = {})
-    }
-}
-
-@Preview(
-    name = "Favorite collections grid. Night mode",
-    showBackground = true,
-    uiMode = Configuration.UI_MODE_NIGHT_YES,
-)
-@Composable
-fun FavoriteCollectionsGridNightPreview() {
     BasicLayoutsTheme {
         FavoriteCollectionsGrid(data = favoriteCollectionsMock, onClick = {})
     }

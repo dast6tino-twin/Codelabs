@@ -1,12 +1,11 @@
 package ru.dast_6_tino.basiclayouts.ui.screens.main
 
-import android.content.res.Configuration
 import androidx.compose.foundation.layout.Row
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.tooling.preview.Preview
 import ru.dast_6_tino.basiclayouts.BasicLayoutsAppScreen
+import ru.dast_6_tino.basiclayouts.ui.DarkLightPreviews
 import ru.dast_6_tino.basiclayouts.ui.composables.BasicLayoutsNavigationRail
 import ru.dast_6_tino.basiclayouts.ui.screens.home.HomeScreen
 import ru.dast_6_tino.basiclayouts.ui.theme.BasicLayoutsTheme
@@ -30,22 +29,8 @@ fun BasicLayoutsAppLandscape(
     }
 }
 
-@Preview(
-    name = "Basic layouts app landscape. Light mode",
-    showBackground = true,
-    uiMode = Configuration.UI_MODE_NIGHT_NO,
-)
+@DarkLightPreviews
 @Composable
 fun BasicLayoutsAppLandscapeLightPreview() {
-    BasicLayoutsAppLandscape({}, {}, BasicLayoutsAppScreen.SPA) {}
-}
-
-@Preview(
-    name = "Basic layouts app landscape. Night mode",
-    showBackground = true,
-    uiMode = Configuration.UI_MODE_NIGHT_YES,
-)
-@Composable
-fun BasicLayoutsAppLandscapeNightPreview() {
     BasicLayoutsAppLandscape({}, {}, BasicLayoutsAppScreen.SPA) {}
 }

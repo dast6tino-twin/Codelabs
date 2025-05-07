@@ -1,6 +1,5 @@
 package ru.dast_6_tino.basiclayouts.ui.composables
 
-import android.content.res.Configuration
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -19,10 +18,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import ru.dast_6_tino.basiclayouts.BasicLayoutsAppScreen
 import ru.dast_6_tino.basiclayouts.R
+import ru.dast_6_tino.basiclayouts.ui.DarkLightPreviews
 import ru.dast_6_tino.basiclayouts.ui.theme.BasicLayoutsTheme
 
 @Composable
@@ -65,26 +64,10 @@ fun BasicLayoutsNavigationRail(
     }
 }
 
-@Preview(
-    name = "Basic layouts navigation rail. Light mode",
-    showBackground = true,
-    uiMode = Configuration.UI_MODE_NIGHT_NO,
-)
+@DarkLightPreviews
 @Composable
 fun BasicLayoutsNavigationRailLightPreview() {
     BasicLayoutsTheme {
         BasicLayoutsNavigationRail(BasicLayoutsAppScreen.SPA, {})
-    }
-}
-
-@Preview(
-    name = "Basic layouts navigation rail. Night mode",
-    showBackground = true,
-    uiMode = Configuration.UI_MODE_NIGHT_YES,
-)
-@Composable
-fun BasicLayoutsNavigationRailNightPreview() {
-    BasicLayoutsTheme {
-        BasicLayoutsNavigationRail(BasicLayoutsAppScreen.PROFILE, {})
     }
 }

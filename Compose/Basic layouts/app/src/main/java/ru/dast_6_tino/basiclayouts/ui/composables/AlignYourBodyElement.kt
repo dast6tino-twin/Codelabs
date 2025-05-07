@@ -1,6 +1,5 @@
 package ru.dast_6_tino.basiclayouts.ui.composables
 
-import android.content.res.Configuration
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
 import androidx.compose.foundation.Image
@@ -19,9 +18,9 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import ru.dast_6_tino.basiclayouts.R
+import ru.dast_6_tino.basiclayouts.ui.DarkLightPreviews
 import ru.dast_6_tino.basiclayouts.ui.theme.BasicLayoutsTheme
 
 @Composable
@@ -51,30 +50,9 @@ fun AlignYourBodyElement(
     }
 }
 
-@Preview(
-    name = "Align your body element. Light mode",
-    showBackground = true,
-    uiMode = Configuration.UI_MODE_NIGHT_NO,
-)
+@DarkLightPreviews
 @Composable
 fun AlignYourBodyElementLightPreview() {
-    BasicLayoutsTheme {
-        AlignYourBodyElement(
-            onClick = {},
-            drawableRes = R.drawable.ab1_inversions,
-            textRes = R.string.ab1_inversions,
-            modifier = Modifier.padding(8.dp),
-        )
-    }
-}
-
-@Preview(
-    name = "Align your body element. Night mode",
-    showBackground = true,
-    uiMode = Configuration.UI_MODE_NIGHT_YES,
-)
-@Composable
-fun AlignYourBodyElementNightPreview() {
     BasicLayoutsTheme {
         AlignYourBodyElement(
             onClick = {},
