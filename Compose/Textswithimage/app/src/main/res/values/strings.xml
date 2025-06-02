@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">Texts with image</string>
+    <string name="greeting">Happy birthday %1$s!</string>
+    <string name="greeting_from">From %1$s</string>
+    <string name="sam">Sam</string>
+    <string name="emma">Emma</string>
+
+</resources>
