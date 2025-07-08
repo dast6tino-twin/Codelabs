@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Compose for Wear OS Code Lab</string>
+    <string name="triggers_phone_action">triggers phone action</string>
+    <string name="hello_compose_codelab">Welcome to Compose Codelab!</string>
+    <string name="triggers_open_message_action">triggers open message action</string>
+    <string name="card_example_title">Messages</string>
+    <string name="card_example_time">12m</string>
+    <string name="card_example_author">Kim Green</string>
+    <string name="card_example_message">On my way</string>
+    <string name="more">More</string>
+    <string name="triggers_meditation_action">triggers meditation action</string>
+    <string name="_5_minute_meditation">5 minute Meditation</string>
+    <string name="sound">Sound</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+
+</resources>
