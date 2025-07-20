@@ -1,16 +1,10 @@
-# Unit 1: Your first Android app
+# Unit 2: Building app UI
 
-Link: https://developer.android.com/courses/android-basics-compose/unit-1
+Links: https://developer.android.com/courses/android-basics-compose/unit-2
 
-The first two pathways were
-about [kotlin basics](https://developer.android.com/courses/pathways/android-basics-compose-unit-1-pathway-1)
-and [ide setup](https://developer.android.com/courses/pathways/android-basics-compose-unit-1-pathway-2).
-There is nothing interesting in them to publish on github. Here are the codelabs from the third
-path.
-
-## Build a basic layout
-
-Link: https://developer.android.com/courses/pathways/android-basics-compose-unit-1-pathway-3
+The first pathway were
+about [kotlin fundamentals](https://developer.android.com/courses/pathways/android-basics-compose-unit-2-pathway-1).
+It doesn't have anything interesting to publish on github.
 
 | Project name and link                   | Codelab link                                                                                                                                                                                                        |                                 Result                                  |
 |:----------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------:|
