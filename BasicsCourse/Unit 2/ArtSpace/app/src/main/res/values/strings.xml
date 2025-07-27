@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Art Space</string>
+
+    <string name="action_previous">Previous</string>
+    <string name="action_next">Next</string>
+
+    <string name="getty_search_gateway_copyrights">Digital image courtesy of the Getty’s Open Content Program</string>
+
+</resources>
