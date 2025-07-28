@@ -1,4 +1,4 @@
-package ru.dast_6_tino.artspace.ui.screens
+package ru.dast_6_tino.artspace.ui.screens.main
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.Scaffold
@@ -13,7 +13,6 @@ import androidx.lifecycle.compose.LocalLifecycleOwner
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
 import kotlinx.coroutines.launch
-import ru.dast_6_tino.artspace.MainViewModel
 import ru.dast_6_tino.artspace.data.Art
 import ru.dast_6_tino.artspace.ui.DarkLightPreviews
 import ru.dast_6_tino.artspace.ui.components.*
@@ -24,7 +23,7 @@ fun MainScreen(
     viewModel: MainViewModel = viewModel(),
 ) {
     val coroutineScope = rememberCoroutineScope()
-    val art by viewModel.artFlow.collectAsStateWithLifecycle(Art.default, LocalLifecycleOwner.current)
+    val art by viewModel.artStateFlow.collectAsStateWithLifecycle(LocalLifecycleOwner.current)
 
     MainScreenStateless(
         art = art,

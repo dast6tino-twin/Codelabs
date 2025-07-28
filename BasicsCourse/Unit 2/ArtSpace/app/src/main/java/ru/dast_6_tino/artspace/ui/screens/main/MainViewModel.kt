@@ -1,13 +1,14 @@
-package ru.dast_6_tino.artspace
+package ru.dast_6_tino.artspace.ui.screens.main
 
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.flow.*
 import ru.dast_6_tino.artspace.data.Art
 import ru.dast_6_tino.artspace.data.Repository
 
 class MainViewModel : ViewModel() {
 
-    val artFlow: Flow<Art>
+    val artStateFlow: StateFlow<Art>
 
     private val navigationSharedFlow = MutableSharedFlow<Navigation>()
 
@@ -25,7 +26,8 @@ class MainViewModel : ViewModel() {
             }
         }
 
-        artFlow = merge(defaultArtFlow, nextArtFlow)
+        artStateFlow = merge(defaultArtFlow, nextArtFlow)
+            .stateIn(viewModelScope, SharingStarted.WhileSubscribed(), Art.default)
     }
 
     suspend fun previous(id: Int) = navigationSharedFlow.emit(Navigation.Previous(id))
