@@ -4,15 +4,12 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import androidx.lifecycle.compose.LocalLifecycleOwner
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
-import kotlinx.coroutines.launch
 import ru.dast_6_tino.artspace.data.Art
 import ru.dast_6_tino.artspace.ui.DarkLightPreviews
 import ru.dast_6_tino.artspace.ui.components.*
@@ -22,16 +19,15 @@ import ru.dast_6_tino.artspace.ui.theme.ArtSpaceTheme
 fun MainScreen(
     viewModel: MainViewModel = viewModel(),
 ) {
-    val coroutineScope = rememberCoroutineScope()
-    val art by viewModel.artStateFlow.collectAsStateWithLifecycle(LocalLifecycleOwner.current)
+    val art by viewModel.artStateFlow.collectAsStateWithLifecycle()
 
     MainScreenStateless(
         art = art,
         onPreviousClick = {
-            coroutineScope.launch { viewModel.previous(art.image) }
+            viewModel.previous(art.image)
         },
         onNextClick = {
-            coroutineScope.launch { viewModel.next(art.image) }
+            viewModel.next(art.image)
         },
     )
 }

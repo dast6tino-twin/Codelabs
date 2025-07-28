@@ -3,6 +3,7 @@ package ru.dast_6_tino.artspace.ui.screens.main
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.flow.*
+import kotlinx.coroutines.launch
 import ru.dast_6_tino.artspace.data.Art
 import ru.dast_6_tino.artspace.data.Repository
 
@@ -15,7 +16,7 @@ class MainViewModel : ViewModel() {
     init {
         val artsFlow = flow { emit(Repository.getArts()) }
 
-        val defaultArtFlow = artsFlow.map { arts -> arts.random() }
+        val defaultArtFlow = artsFlow.take(1).map { arts -> arts.random() }
 
         val nextArtFlow = combine(navigationSharedFlow, artsFlow) { navigation, arts ->
             val selectedIndex = arts.indexOfFirst { it.image == navigation.id }
@@ -27,12 +28,13 @@ class MainViewModel : ViewModel() {
         }
 
         artStateFlow = merge(defaultArtFlow, nextArtFlow)
-            .stateIn(viewModelScope, SharingStarted.WhileSubscribed(), Art.default)
+            .catch { emit(Art.default) }
+            .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), Art.default)
     }
 
-    suspend fun previous(id: Int) = navigationSharedFlow.emit(Navigation.Previous(id))
+    fun previous(id: Int) = viewModelScope.launch { navigationSharedFlow.emit(Navigation.Previous(id)) }
 
-    suspend fun next(id: Int) = navigationSharedFlow.emit(Navigation.Next(id))
+    fun next(id: Int) = viewModelScope.launch { navigationSharedFlow.emit(Navigation.Next(id)) }
 
     private companion object {
 
