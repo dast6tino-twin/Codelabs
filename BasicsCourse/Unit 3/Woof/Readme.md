@@ -1,6 +1,9 @@
 # Woof app
 
-Links: https://developer.android.com/codelabs/basic-android-kotlin-compose-material-theming
+Links:
+
+- https://developer.android.com/codelabs/basic-android-kotlin-compose-material-theming
+- https://developer.android.com/codelabs/basic-android-kotlin-compose-woof-animation
 
 ### Fonts
 
@@ -15,7 +18,8 @@ This project uses the following fonts under the SIL Open Font License 1.1:
   Copyright © 2024, The Montserrat.Git Project Authors  
   [https://github.com/JulietaUla/Montserrat.git](https://github.com/JulietaUla/Montserrat.git)
 
-These fonts are licensed under the [SIL Open Font License, Version 1.1](https://openfontlicense.org).
+These fonts are licensed under
+the [SIL Open Font License, Version 1.1](https://openfontlicense.org).
 The full license text is [here](License_fonts.txt).
 
 ![Result](result/result.gif)
