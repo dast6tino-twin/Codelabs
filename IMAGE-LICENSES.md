@@ -1,27 +1,24 @@
-This project includes two sets of image assets under different open-source licenses.
+## This project includes two sets of image assets under different open-source licenses.
 
----
-
-📁 Images from the Android Open Source Project (AOSP)
+### Images from the Android Open Source Project (AOSP)
 
 These images are licensed under the Apache License 2.0:
 https://www.apache.org/licenses/LICENSE-2.0
 
 Please see [LICENSE-APACHE.txt](LICENSE-APACHE.txt) for the full license text.
 
----
+### Photos by Romain Guy
 
-📁 Photos by Romain Guy (
-in [BasicsCourse/Unit%203/Courses/app/src/main/res/drawable-nodpi](BasicsCourse/Unit%203/Courses/app/src/main/res/drawable-nodpi)
-and [BasicsCourse/Unit%203/Affirmations/app/src/main/res/drawable-nodpi](BasicsCourse/Unit%203/Affirmations/app/src/main/res/drawable-nodpi))
+Images in
+the [BasicsCourse/Unit%203/Courses/app/src/main/res/drawable-nodpi](BasicsCourse/Unit%203/Courses/app/src/main/res/drawable-nodpi)
+and [BasicsCourse/Unit%203/Affirmations/app/src/main/res/drawable-nodpi](BasicsCourse/Unit%203/Affirmations/app/src/main/res/drawable-nodpi)
+folders.
 
 These photos were originally used in the "Android Basics with Compose" course by Google.
 All photos are by Romain Guy and are licensed under the Creative Commons CC0 1.0 Universal license:
 https://creativecommons.org/publicdomain/zero/1.0/
 
----
-
-Images from Pexels.com
+### Images from Pexels.com
 
 These images are used under the Pexels License:  
 https://www.pexels.com/license/
