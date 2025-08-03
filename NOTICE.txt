@@ -1,0 +1,7 @@
+This project includes image assets from the Android Open Source Project,
+which are licensed under the Apache License, Version 2.0.
+
+Android is a trademark of Google LLC.
+
+Source: https://android.googlesource.com/
+License: https://www.apache.org/licenses/LICENSE-2.0
