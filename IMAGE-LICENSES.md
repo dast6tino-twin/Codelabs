@@ -7,6 +7,8 @@ https://www.apache.org/licenses/LICENSE-2.0
 
 Please see [LICENSE-APACHE.txt](LICENSE-APACHE.txt) for the full license text.
 
+---
+
 ### Photos by Romain Guy
 
 Images in
@@ -17,6 +19,8 @@ folders.
 These photos were originally used in the "Android Basics with Compose" course by Google.
 All photos are by Romain Guy and are licensed under the Creative Commons CC0 1.0 Universal license:
 https://creativecommons.org/publicdomain/zero/1.0/
+
+---
 
 ### Images from Pexels.com
 
