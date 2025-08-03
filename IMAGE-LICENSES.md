@@ -12,8 +12,8 @@ Please see [LICENSE-APACHE.txt](LICENSE-APACHE.txt) for the full license text.
 ### Photos by Romain Guy
 
 Images in
-the [BasicsCourse/Unit%203/Courses/app/src/main/res/drawable-nodpi](BasicsCourse/Unit%203/Courses/app/src/main/res/drawable-nodpi)
-and [BasicsCourse/Unit%203/Affirmations/app/src/main/res/drawable-nodpi](BasicsCourse/Unit%203/Affirmations/app/src/main/res/drawable-nodpi)
+the [BasicsCourse/Unit 3/Courses/app/src/main/res/drawable-nodpi](BasicsCourse/Unit%203/Courses/app/src/main/res/drawable-nodpi)
+and [BasicsCourse/Unit 3/Affirmations/app/src/main/res/drawable-nodpi](BasicsCourse/Unit%203/Affirmations/app/src/main/res/drawable-nodpi)
 folders.
 
 These photos were originally used in the "Android Basics with Compose" course by Google.
