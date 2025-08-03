@@ -5,3 +5,6 @@ Android is a trademark of Google LLC.
 
 Source: https://android.googlesource.com/
 License: https://www.apache.org/licenses/LICENSE-2.0
+
+It also includes photographs by Romain Guy used in the
+"Android Basics with Compose" course, licensed under CC0 1.0 Universal.
