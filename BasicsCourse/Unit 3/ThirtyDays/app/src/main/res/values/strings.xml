@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">30 Days</string>
+
+    <string name="day_one_title">Day 1</string>
+    <string name="day_one_message">Don’t live someone else’s life</string>
+    <string name="day_two_title">Day 2</string>
+    <string name="day_two_message">Never make big decisions on an empty stomach</string>
+    <string name="day_three_title">Day 3</string>
+    <string name="day_three_message">Simplicity is a sign of maturity</string>
+    <string name="day_four_title">Day 4</string>
+    <string name="day_four_message">People don’t owe you your version of them</string>
+    <string name="day_five_title">Day 5</string>
+    <string name="day_five_message">Do less, but do it better</string>
+    <string name="day_six_title">Day 6</string>
+    <string name="day_six_message">Energy matters more than time</string>
+    <string name="day_seven_title">Day 7</string>
+    <string name="day_seven_message">Nothing has to be “forever”</string>
+    <string name="day_eight_title">Day 8</string>
+    <string name="day_eight_message">Calm is power</string>
+    <string name="day_nine_title">Day 9</string>
+    <string name="day_nine_message">Surround yourself with people who challenge you</string>
+    <string name="day_ten_title">Day 10</string>
+    <string name="day_ten_message">A sincere “no” is better than a fake “yes”</string>
+    <string name="day_eleven_title">Day 11</string>
+    <string name="day_eleven_message">Risk is the price of freedom</string>
+    <string name="day_twelve_title">Day 12</string>
+    <string name="day_twelve_message">Beauty lives in small moments</string>
+    <string name="day_thirteen_title">Day 13</string>
+    <string name="day_thirteen_message">You don’t have to explain everything</string>
+    <string name="day_fourteen_title">Day 14</string>
+    <string name="day_fourteen_message">Be real, not impressive</string>
+    <string name="day_fifteen_title">Day 15</string>
+    <string name="day_fifteen_message">Care is action, not words</string>
+    <string name="day_sixteen_title">Day 16</string>
+    <string name="day_sixteen_message">Go toward what scares you - if it also excites you</string>
+    <string name="day_seventeen_title">Day 17</string>
+    <string name="day_seventeen_message">Changing your mind is growth, not weakness</string>
+    <string name="day_eighteen_title">Day 18</string>
+    <string name="day_eighteen_message">No one’s coming to give you permission</string>
+    <string name="day_nineteen_title">Day 19</string>
+    <string name="day_nineteen_message">Silence is also an answer</string>
+    <string name="day_twenty_title">Day 20</string>
+    <string name="day_twenty_message">Do it when you don’t feel like it - that’s discipline</string>
+    <string name="day_twenty_one_title">Day 21</string>
+    <string name="day_twenty_one_message">Don’t chase balance - set priorities</string>
+    <string name="day_twenty_two_title">Day 22</string>
+    <string name="day_twenty_two_message">Not everyone’s life is as perfect as it looks</string>
+    <string name="day_twenty_three_title">Day 23</string>
+    <string name="day_twenty_three_message">Learn to be alone without being lonely</string>
+    <string name="day_twenty_four_title">Day 24</string>
+    <string name="day_twenty_four_message">Emotions are not enemies - but they’re not the boss either</string>
+    <string name="day_twenty_five_title">Day 25</string>
+    <string name="day_twenty_five_message">Stop overcomplicating what can be simple</string>
+    <string name="day_twenty_six_title">Day 26</string>
+    <string name="day_twenty_six_message">Speak directly, but with respect</string>
+    <string name="day_twenty_seven_title">Day 27</string>
+    <string name="day_twenty_seven_message">Inspiration comes after action, not before</string>
+    <string name="day_twenty_eight_title">Day 28</string>
+    <string name="day_twenty_eight_message">Tiredness is not weakness - it’s a message</string>
+    <string name="day_twenty_nine_title">Day 29</string>
+    <string name="day_twenty_nine_message">The goal matters less than the journey</string>
+    <string name="day_thirty_title">Day 30</string>
+    <string name="day_thirty_message">You don’t have to be perfect to be worthy</string>
+
+</resources>
